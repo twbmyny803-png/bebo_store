@@ -26,11 +26,11 @@ left:0;
 width:100%;
 height:100%;
 background:url('bg.jpg') no-repeat center;
-background-size:contain;
+background-size:cover;
 z-index:-2;
 }
 
-/* التعتيم */
+/* تعتيم */
 body::after{
 content:"";
 position:fixed;
@@ -42,6 +42,13 @@ background:rgba(0,0,0,0.7);
 z-index:-1;
 }
 
+/* أيقونات */
+i{
+color:#FFD700;
+text-shadow:0 0 10px #FFD700;
+}
+
+/* أزرار */
 .btn{
 display:block;
 margin:15px auto;
@@ -52,7 +59,7 @@ text-decoration:none;
 font-size:18px;
 }
 
-/* زر واتساب مضيء */
+/* واتساب */
 .whatsapp{
 background:#25D366;
 color:white;
@@ -70,10 +77,10 @@ color:white;
 
 <body>
 
-<h1>التواصل</h1>
+<h1><i class="fa-solid fa-phone"></i> التواصل</h1>
 
 <a class="btn whatsapp" href="https://wa.me/66820941975">
-<i class="fa-brands fa-whatsapp"></i> تواصل واتساب
+<i class="fa-brands fa-whatsapp"></i> واتساب
 </a>
 
 <a class="btn telegram" href="https://t.me/B_OKKK">
